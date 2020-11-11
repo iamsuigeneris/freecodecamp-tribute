@@ -1,0 +1,139 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif;
+}
+body{
+    background: #222222;
+}
+#main{
+    width: 80%;
+    margin: auto;
+    background: #dddddd;
+    height: 100%;;
+    padding: 10px 20px;
+    display: block;
+
+}
+header{
+    min-height: 100vh;
+    display: block;
+}
+#main-header {
+    display: flex;
+}
+#title{
+    flex: 1 0 60%;
+    text-align: center;
+    padding: 2rem 0;
+}
+#title h2{
+    display: block;
+    font-size: 4.5rem;
+}
+#title p{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+#img-div{
+    border: 10px solid lightblue;
+    border-radius: 2px;
+}
+#img-div img{
+    display: block;
+    width: 100%;
+}
+#quote{
+    color: #7d7d7d;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 40px;
+   
+}
+#quote p{
+    font-size: 1.8rem;
+    font-family: 'Sansita Swashed', cursive;
+}
+#quote h4{
+    padding-top: 10px;
+    text-align: end;
+}
+.info-body {
+    margin: 5px 0;
+}
+.info-header {
+    display: block;
+    width: 50%;
+    background: #333333;
+    position: relative;
+}
+/* .icon{
+
+    background: #fff;
+
+    border-radius: 50%;
+    position: absolute;
+    line-height: 10px; 
+} */
+i.fa{
+    position:absolute;
+    width: 24px;
+    height: 24px;
+    /* left: 10px; */
+    top: 8px;
+    text-align: center;
+    font-size: 1.4rem;
+    left: 4px;  
+}
+i.fa{
+    color: yellow;
+} 
+
+.info-header h4{
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.info-content{
+    padding: 5px 10px ;
+    line-height: 1.5;
+}
+.info-content p{
+    padding: 5px 0;
+}
+
+footer{
+    background: lightblue;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+@media (max-width:480px){
+    #main{
+        width: 100%;
+        margin: 0;
+        padding: auto;
+    }
+    #main-header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #quote p {
+        font-size: 1.4rem;
+    }
+    .info-header{
+        display: block;
+        width: 100%;
+    }
+}
